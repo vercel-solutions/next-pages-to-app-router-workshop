@@ -15,7 +15,6 @@ export default async function handler(request, response) {
 }
 ```
 
-## After
 ```js
 // app/api/revalidate/route.js
 
@@ -30,6 +29,7 @@ export async function GET(request) {
 }
 ```
 
+## After
 ```js
 // app/[post]/page.js
 

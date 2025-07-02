@@ -1,7 +1,18 @@
 @import 'tailwindcss';
 
-:root {
-  color-scheme: light dark;
-  color: CanvasText;
-  background-color: Canvas;
+@theme inline {
+  --color-primary: var(--color-stone-950);
+  --color-primary-foreground: var(--color-white);
+}
+
+@layer base {
+  * {
+    @apply border-primary-foreground/10;
+  }
+
+  body {
+    @apply bg-primary text-primary-foreground/90;
+
+    background-image: url('/grid.svg');
+  }
 }
